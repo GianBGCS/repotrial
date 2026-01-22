@@ -18,6 +18,18 @@ public class SecondCalcu{
                 double add2 = scan.nextDouble();
 
                 System.out.println(sum(add1, add2));
+
+                break;
+
+            case 2:
+                System.out.println("Subtraction");
+                System.out.print("Enter first number");
+                double diff1 = scan.nextDouble();
+
+                System.out.print("Enter second number");
+                double diff2 = scan.nextDouble();
+
+                System.out.println(difference(diff1, diff2));
         }
 
     }
