@@ -4,7 +4,7 @@ public class SecondCalcu{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Menu: \n[1] Addition \n[2] Subtraction \n[3] MultiplicatiSon");
+        System.out.println("Menu: \n[1] Addition \n[2] Subtraction \n[3] Multiplication");
         System.out.print("Choose an option: ");
         int option = scan.nextInt();
 
@@ -30,6 +30,20 @@ public class SecondCalcu{
                 double diff2 = scan.nextDouble();
 
                 System.out.println(difference(diff1, diff2));
+
+                break;
+
+            case 3:
+                System.out.println("Multiplication");
+                System.out.print("Enter first number");
+                double mult1 = scan.nextDouble();
+
+                System.out.print("Enter second number");
+                double mult2 = scan.nextDouble();
+
+                System.out.println(product(mult1, mult2));
+
+                break;
         }
 
     }
